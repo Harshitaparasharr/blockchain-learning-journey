@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract StudentRecord {
+    // variables
+    string public studentName;
+    uint public studentAge;
+    bool public isEnrolled;
+
+    // function to set student details
+    function setDetails () public {
+        studentName = "harshita";
+        studentAge = 20;
+        isEnrolled = true;
+    }
+
+    // function to update age
+    function updateAge() public {
+        studentAge = 21;
+    }
+
+    // function to get student info
+    function getDetails() public view returns (string memory, uint, bool) {
+        return (studentName, studentAge, isEnrolled);
+    }
+}
