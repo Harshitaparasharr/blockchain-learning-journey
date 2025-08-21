@@ -1,0 +1,16 @@
+//SPDX-License-Identifier: MIT
+ pragma solidity ^0.8.0;
+
+ contract functions {
+//code
+uint public val = 4;
+function add()  public pure returns(uint) {
+//code
+return  3+2;
+
+}
+ }
+//pure -<<< state variable state , edit
+//view ----> state variable view
+//publice--->
+//return  --->
