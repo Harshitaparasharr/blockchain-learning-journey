@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SimpleBank {
+    uint public balance;
+
+    // set initial balance
+    function setBalance() public {
+        balance = 28012005;
+    }
+
+    // deposit money
+    function deposit() public {
+        balance = balance + 2800;
+    }
+
+    // withdraw money
+    function withdraw() public {
+        balance = balance - 2800;
+    }
+
+    // check balance
+    function getBalance() public view returns (uint) {
+        return balance;
+    }
+}
