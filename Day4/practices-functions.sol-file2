@@ -1,0 +1,33 @@
+ // SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Calculator {
+    uint public result;
+
+    // Add two numbers
+    function add() public {
+        result = 80 + 40;
+    }
+
+    // Subtract two numbers
+    function subtract() public {
+        //require(a >= b, "First number must be greater or equal");  
+        result = 28 - 18;
+    }
+
+    // Multiply two numbers
+    function multiply() public {
+        result = 27 * 28;
+    }
+
+    // Divide two numbers
+    function divide() public {
+       // require(b != 0, "Cannot divide by zero");  
+        result = 60 / 30;
+    }
+
+    // Get the last result
+    function getResult() public view returns (uint) {
+        return result;
+    }
+}
