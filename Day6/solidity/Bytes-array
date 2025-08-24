@@ -1,0 +1,25 @@
+                 *********************** Bytes array **********************
+
+-->    1 byte = 8 bits.
+-->     1 hexadecimal digit = 4 bits.
+---> everything that will be store in th bytes array will be form in the hexadecimal digits.
+----> Byte array cannot be modified.
+--->  paddding of 0 is added at the end if the value ( by which the array is initialized 0 does not occupy the entire space.
+
+
+example --->    //SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+contract array {
+    bytes3 public b3;
+    bytes2 public b2;
+
+    function setter () public {
+      b3="abc";
+      b2="ab";
+    }
+
+     
+}
+    
