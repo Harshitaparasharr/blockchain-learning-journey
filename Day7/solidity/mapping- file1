@@ -1,0 +1,34 @@
+ Mapping is a data structure used to store data in key-value pairs. Each key is linked to one value.
+
+Key → simple type (like address, uint).
+
+Value → can be any type (number, bool, struct).
+
+If a key is not set, it returns the default value.
+
+You cannot loop through all keys, only access by key.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Common uses:
+
+Storing user balances in tokens.
+
+Checking if someone has voted or not.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+example ---:      //SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+contract demo {
+    mapping(uint=>string) public roll_no;
+
+function setter (uint keys , string  memory value) public
+    {
+                                   
+     roll_no[keys]=value;
+    }
+}
+  
