@@ -1,0 +1,33 @@
+**view function**
+A view function is a read-only function that can access blockchain state variables but cannot modify them.
+
+example --- //SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+contract local {
+
+    uint public age = 10;
+
+function getter () public view returns ( uint )
+{
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**pure function**
+A pure function is a completely independent function that neither reads nor modifies blockchain state variables.
+
+example----//SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+contract local {
+
+    uint public age = 10;
+ function getter () public pure returns (uint)
+{
+    uint roll = 2299;
+    return roll;
+}
+
+}
