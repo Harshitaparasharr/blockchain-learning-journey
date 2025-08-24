@@ -1,0 +1,16 @@
+** constructor **
+-- Executed only once.
+-- You can create only one cobstructor and it is optional.
+-- A default constructor is created by the compiler if there is no explicitly define constructor .
+
+example --->  //SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+contract local { 
+    uint public count;
+    constructor ( uint new_count)
+    {
+        count=new_count;
+    }
+}
