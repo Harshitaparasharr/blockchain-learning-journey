@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract MyProfile {
+    string public name;
+    uint public number;
+
+    // Constructor runs once at deployment
+    constructor(string memory new_name, uint new_number) {
+        name = new_name;
+        number = new_number;
+    }
+}
